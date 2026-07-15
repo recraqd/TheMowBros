@@ -891,3 +891,322 @@ CALL TO ACTION
     opacity:.95;
 
 }
+/* =====================================================
+   THE MOW BRO'S
+   Premium Lawn Care Website
+   Part 3 / 3
+===================================================== */
+
+/*==============================
+CONTACT
+==============================*/
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:40px;
+    align-items:start;
+}
+
+.contact-info{
+    background:linear-gradient(135deg,var(--green),var(--dark));
+    color:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:var(--shadow);
+}
+
+.contact-info h3{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin-bottom:18px;
+    opacity:.95;
+}
+
+.contact-form{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:var(--shadow2);
+}
+
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+    width:100%;
+    padding:16px;
+    border:2px solid #e5e5e5;
+    border-radius:15px;
+    font-family:'Poppins',sans-serif;
+    font-size:1rem;
+    transition:.3s;
+    outline:none;
+}
+
+.contact-form textarea{
+    resize:vertical;
+    min-height:180px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus{
+    border-color:var(--green2);
+    box-shadow:0 0 15px rgba(67,160,71,.2);
+}
+
+/*==============================
+BUTTON
+==============================*/
+
+button{
+    cursor:pointer;
+    border:none;
+    font-family:'Poppins',sans-serif;
+}
+
+/*==============================
+FOOTER
+==============================*/
+
+footer{
+    margin-top:100px;
+    background:#103014;
+    color:white;
+    padding:70px 20px 30px;
+}
+
+.footer-grid{
+    width:min(1200px,92%);
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+}
+
+.footer-grid h3{
+    margin-bottom:20px;
+    color:#8dff7d;
+}
+
+.footer-grid p,
+.footer-grid a{
+    color:#d8d8d8;
+    margin:10px 0;
+    display:block;
+    transition:.3s;
+}
+
+.footer-grid a:hover{
+    color:#8dff7d;
+    transform:translateX(6px);
+}
+
+.footer-bottom{
+    margin-top:50px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.15);
+    text-align:center;
+    color:#cfcfcf;
+}
+
+/*==============================
+FLOATING QUOTE BUTTON
+==============================*/
+
+.floating-quote{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    background:linear-gradient(135deg,var(--green3),var(--green));
+    color:white;
+    padding:16px 24px;
+    border-radius:50px;
+    font-weight:700;
+    box-shadow:0 15px 35px rgba(46,125,50,.35);
+    z-index:999;
+    transition:.3s;
+    animation:float 3s ease-in-out infinite;
+}
+
+.floating-quote:hover{
+    transform:translateY(-5px) scale(1.05);
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+}
+
+/*==============================
+UTILITIES
+==============================*/
+
+.text-center{
+    text-align:center;
+}
+
+.mt-1{margin-top:10px;}
+.mt-2{margin-top:20px;}
+.mt-3{margin-top:30px;}
+.mt-4{margin-top:40px;}
+.mt-5{margin-top:60px;}
+
+.mb-1{margin-bottom:10px;}
+.mb-2{margin-bottom:20px;}
+.mb-3{margin-bottom:30px;}
+.mb-4{margin-bottom:40px;}
+.mb-5{margin-bottom:60px;}
+
+/*==============================
+SCROLLBAR
+==============================*/
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#edf7ed;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--green);
+    border-radius:30px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:var(--dark);
+}
+
+/*==============================
+TEXT SELECTION
+==============================*/
+
+::selection{
+    background:var(--green2);
+    color:white;
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+    padding:20px;
+    gap:20px;
+}
+
+nav{
+    flex-direction:column;
+    width:100%;
+}
+
+nav ul{
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+}
+
+.hero{
+    min-height:90vh;
+    padding:120px 20px 80px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    width:100%;
+}
+
+.button,
+.button-primary,
+.button-secondary,
+.quote-button{
+    width:100%;
+    text-align:center;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+
+.gallery{
+    grid-template-columns:1fr;
+}
+
+.services-grid{
+    grid-template-columns:1fr;
+}
+
+.stats{
+    grid-template-columns:1fr;
+}
+
+.contact-grid{
+    grid-template-columns:1fr;
+}
+
+.footer-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.floating-quote{
+    right:15px;
+    left:15px;
+    bottom:15px;
+    text-align:center;
+}
+
+section{
+    padding:70px 0;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero h2{
+    font-size:2.3rem;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+.logo h1{
+    font-size:1.6rem;
+}
+
+section h2{
+    font-size:2rem;
+}
+
+.service-card,
+.testimonial,
+.contact-form,
+.contact-info{
+    padding:25px;
+}
+
+.gallery-item img{
+    height:220px;
+}
+
+}
