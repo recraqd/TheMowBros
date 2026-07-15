@@ -477,3 +477,417 @@ SCROLL INDICATOR
     }
 
 }
+/* =====================================================
+   THE MOW BRO'S
+   Premium Lawn Care Website
+   Part 2 / 3
+===================================================== */
+
+/*==============================
+SERVICES
+==============================*/
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+.service-card{
+
+    position:relative;
+
+    background:var(--white);
+
+    padding:40px 30px;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow2);
+
+    overflow:hidden;
+
+    transition:var(--transition);
+
+    border:1px solid rgba(46,125,50,.08);
+
+}
+
+.service-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:6px;
+
+    background:linear-gradient(
+        90deg,
+        var(--green3),
+        var(--green)
+    );
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.service-icon{
+
+    width:80px;
+
+    height:80px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        var(--green3),
+        var(--green)
+    );
+
+    color:white;
+
+    font-size:2rem;
+
+}
+
+.service-card h3{
+
+    color:var(--dark);
+
+    font-size:1.5rem;
+
+    margin-bottom:15px;
+
+}
+
+.service-card p{
+
+    color:var(--gray);
+
+}
+
+/*==============================
+STATS
+==============================*/
+
+.stats{
+
+    background:linear-gradient(
+        135deg,
+        var(--green),
+        var(--dark)
+    );
+
+    border-radius:30px;
+
+    color:white;
+
+    padding:70px 40px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:40px;
+
+    text-align:center;
+
+    margin-top:80px;
+
+}
+
+.stat h2{
+
+    color:white;
+
+    font-size:3rem;
+
+    margin-bottom:10px;
+
+}
+
+.stat p{
+
+    opacity:.9;
+
+}
+
+/*==============================
+ABOUT
+==============================*/
+
+.about{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.about img{
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.about h2{
+
+    text-align:left;
+
+}
+
+.about p{
+
+    color:var(--gray);
+
+    margin-bottom:18px;
+
+}
+
+/*==============================
+GALLERY
+==============================*/
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.gallery-item{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    box-shadow:var(--shadow2);
+
+}
+
+.gallery-item img{
+
+    height:300px;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.gallery-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.75)
+    );
+
+    display:flex;
+
+    align-items:flex-end;
+
+    padding:25px;
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.gallery-item:hover .gallery-overlay{
+
+    opacity:1;
+
+}
+
+.gallery-overlay h3{
+
+    color:white;
+
+    font-size:1.5rem;
+
+}
+
+/*==============================
+TESTIMONIALS
+==============================*/
+
+.testimonials{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.testimonial{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:var(--shadow2);
+
+    transition:var(--transition);
+
+}
+
+.testimonial:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.stars{
+
+    color:#FFD54F;
+
+    font-size:1.3rem;
+
+    margin-bottom:15px;
+
+}
+
+.testimonial p{
+
+    color:var(--gray);
+
+    margin-bottom:20px;
+
+    font-style:italic;
+
+}
+
+.customer{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.customer img{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.customer h4{
+
+    color:var(--dark);
+
+}
+
+.customer span{
+
+    color:var(--gray);
+
+    font-size:.9rem;
+
+}
+
+/*==============================
+CALL TO ACTION
+==============================*/
+
+.cta{
+
+    background:linear-gradient(
+        135deg,
+        var(--green3),
+        var(--green)
+    );
+
+    color:white;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    padding:80px 40px;
+
+    margin-top:90px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.cta h2{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    max-width:700px;
+
+    margin:0 auto 35px;
+
+    opacity:.95;
+
+}
